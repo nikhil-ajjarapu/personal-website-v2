@@ -1,7 +1,7 @@
 const favicons = require("favicons")
 const fs = require('fs')
 
-const source = "config/profile.png" // Source image(s). `string`, `buffer` or array of `string`
+const source = "config/favicon-large.png" // Source image(s). `string`, `buffer` or array of `string`
 
 const configuration = {
   path: "/", // Path for overriding default icons path. `string`
@@ -27,12 +27,12 @@ const configuration = {
     // Platform Options:
     // - offset - offset in percentage
     // - background:
-    //   * false - use default
-    //   * true - force use default, e.g. set background for Android icons
-    //   * color - set background for the specified icons
-    //   * mask - apply mask in order to create circle icon (applied by default for firefox). `boolean`
-    //   * overlayGlow - apply glow effect after mask has been applied (applied by default for firefox). `boolean`
-    //   * overlayShadow - apply drop shadow after mask has been applied .`boolean`
+    // * false - use default
+    // * true - force use default, e.g. set background for Android icons
+    // * color - set background for the specified icons
+    // * mask - apply mask in order to create circle icon (applied by default for firefox). `boolean`
+    // * overlayGlow - apply glow effect after mask has been applied (applied by default for firefox). `boolean`
+    // * overlayShadow - apply drop shadow after mask has been applied .`boolean`
     //
     // https://github.com/itgalaxy/favicons/issues/185
     android: false, // Create Android homescreen icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
@@ -43,15 +43,14 @@ const configuration = {
     firefox: false, // Create Firefox OS icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
     windows: false, // Create Windows 8 tile icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
     yandex: false, // Create Yandex browser icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
-  },
+  }
 }
 
 const createFile = function (path, content) {
   fs.writeFile(path, content, (err) => {
     if (err) {
       console.error(err)
-    }
-    else {
+    } else {
       console.log(`${path} created`)
     }
   })
@@ -68,7 +67,7 @@ const callback = function (error, response) {
 
   // createFile("index.html", response.html.join('\n'));
   // response.files.forEach(element => {
-  //   createFile(element.name, element.contents);
+  // createFile(element.name, element.contents);
   // });
   response.images.forEach(element => {
     createFile('public/' + element.name, element.contents);

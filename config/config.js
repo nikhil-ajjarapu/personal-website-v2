@@ -1,165 +1,138 @@
-
 import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import {faMedium, faGithub, faApple} from '@fortawesome/free-brands-svg-icons';
+import {faLink} from '@fortawesome/free-solid-svg-icons';
 
 export const navigation = {
-	name: "Hashir",
-	links: [
-		{
-			title: "About",
-			link: "#about",
-		},
-		{
-			title: "Projects",
-			link: "#projects",
-		},
-		{
-			title: "Contact",
-			link: "#contact",
-		},
-		{
-			title: "Links",
-			link: "/links",
-		},
-	],
+  name: "Nikhil",
+  links: [
+    {
+      title: "About",
+      link: "#about"
+    }, {
+      title: "Projects",
+      link: "#projects"
+    }, {
+      title: "Contact",
+      link: "#contact"
+    },
+  ]
 }
 export const intro = {
-	title: "Hey, I'm Hashir",
-	description: "A Computer Engineer creating mobile apps and static websites.",
-	image: profile.src,
-	buttons: [
-		{
-			title: "Contact Me",
-			link: "#contact",
-			isPrimary: true,
-		},
-		{
-			title: "Resume",
-			link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
-			isPrimary: false,
-		},
-	],
+  title: "Hey, I'm Nikhil!",
+  description: "",
+  image: profile.src,
+  buttons: [
+    {
+      title: "Resume",
+      link: "https://drive.google.com/file/d/1Fy3JYGtpXEr1wPjNDJRCcYIUS0pXZkar/view?usp=sharing",
+      isPrimary: true
+    }, 
+    {
+      title: "Linkedin",
+      link: "https://linkedin.com/in/nikhilajjarapu",
+      isPrimary: false
+    },{
+      title: "Github",
+      link: "https://github.com/nikhil-ajjarapu",
+      isPrimary: false
+    },
+  ]
 }
-
 export const about = {
-	title: "Who I am",
-	description: [
-		"I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-		"The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-		"When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
-	],
+  title: "Who I am",
+  description: ["Hey there! My name is Nikhil Ajjarapu, and I recently graduated from the University of Texas, Austin, with a Master's in Computer Science (specializing in Artificial Intelligence). My experience includes working as an AI Software Engineer at Camino Robotics, improving information retrieval and search at Apple on the Apple Knowledge Platform team, and building key infrastructure at Lyft in their Level 5 division. I am currently seeking full-time software engineering and machine learning opportunities - please feel free to connect!",]
 }
-
 export const work = {
-	title: "What I do",
-	cards: [
-		{
-			title: "Mobile App Development",
-			description: "I create pixel perfect iOS and Andriod apps using Flutter.",
-			icons: null,
-		},
-		{
-			title: "Web Development",
-			description: "I create responsive static websites using Reactjs.",
-			icons: null,
-		}
-	],
+  title: "Where I've worked",
+  cards: [
+    {
+      title: "Camino Robotics",
+      description: "Working here as an AI Engineer, building a smart walker for the elderly and people with disabilities. Responsible for maintaining end-to-end pose estimation and gait metrics generation pipeline.",
+      icons: [
+        {
+          icon: faApple,
+          link: "https://medium.com/@nikhil.ajjarapu/the-effect-of-fouls-on-a-players-performance-in-the-nba-42a0149a1d20"
+        },
+      ]
+    },
+    {
+      title: "Apple",
+      description: "Worked here twice on the Apple Platform team.",
+      icons: [
+        {
+          icon: faApple,
+          link: "https://medium.com/@nikhil.ajjarapu/the-effect-of-fouls-on-a-players-performance-in-the-nba-42a0149a1d20"
+        },
+      ]
+    }, {
+      title: "Lyft",
+      description: "Worked here twice on the Level 5 Perception team and the Growth and Memberships team in Transit, Bikes, and Scooters.",
+      icons: [
+        {
+          icon: faApple,
+          link: "https://medium.com/@nikhil.ajjarapu/the-effect-of-fouls-on-a-players-performance-in-the-nba-42a0149a1d20"
+        },
+      ]
+    },
+  ]
 }
-
 export const projects = {
-	title: "Projects",
-	cards: [
-		{
-			title: "StarBook",
-			description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
-			icons: [
-				{
-					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-				},
-				{
-					icon: faGithub,
-					link: "https://github.com/hashirshoaeb/star_book",
-				},
-			]
-		},
-		{
-			title: "QuranTalk",
-			description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-			icons: [
-				{
-					icon: faAppStore,
-					link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
-				},
-				{
-					icon: faGooglePlay,
-					link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
-				},
-			]
-		},
-		{
-			title: "Portfolio",
-			description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-			icons: [
-				{
-					icon: faGithub,
-					link: "https://github.com/hashirshoaeb/portfolio",
-				},
-			]
-		},
-	],
+  title: "Projects",
+  cards: [
+    {
+      title: "Analyzing NBA Player Performance Compared to Number of Fouls ",
+      description: "Program that analyzes NBA player performance compared to number of times they have been fouled. Accompanied by a short Medium article explaining some interesting results.",
+      icons: [
+        {
+          icon: faMedium,
+          link: "https://medium.com/@nikhil.ajjarapu/the-effect-of-fouls-on-a-players-performance-in-the-nba-42a0149a1d20"
+        }, {
+          icon: faGithub,
+          link: "https://github.com/nikhil-ajjarapu/foul-analyzer-nba"
+        },
+      ]
+    }, {
+      title: "Dynasty Team Assist",
+      description: "A fantasy football tool that helps suggest trade ideas in your league based on player values sourced from KeepTradeCut. Allows for customization based on risk propensity, positions of need, and willingness to overpay. >40k lifetime hits, with 2k unique visitors per month.",
+      icons: [
+      ]
+    }, {
+      title: "Predicting NFL Rookie QB Success using Machine Learning",
+      description: "Uses machine learning to predict the success of a rookie QB in the NFL. Uses a variety of advanced stats to quantify player performance. Submitted to Convergent Side Project Expo 2019.",
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/nikhil-ajjarapu/rookieQB-predictor"
+        },
+      ]
+    },
+  ]
 }
-
 export const contact = {
-	title: "Get in touch",
-	description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
-	buttons: [
-		{
-			title: "Email Me",
-			link: "mailto:hashirshoaeb@gmail.com",
-			isPrimary: true,
-		},
-		{
-			title: "Schedule Meeting",
-			link: "",
-			isPrimary: false,
-		},
-	]
-}
-
-// SEARCH ENGINE 
-export const SEO = {
-	// 50 - 60 char  
-	title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-	description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
-	image: profile.src,
+  title: "Get in touch",
+  description: "Please feel free to email me at nikhil (dot) ajjarapu (at) gmail (dot) com.",
+  buttons: []
+} // SEARCH ENGINE
+export const SEO = { // 50 - 60 char
+  title: "Nikhil Ajjarapu",
+  description: "Nikhil Ajjarapu is a AI engineer with a master's in Computer Science and Artificial Intelligence from UT Austin. Previously interned at Apple and Lyft. Currently pursuing full time opportunities in software engineering and artificial intelligence/machine learning roles. ",
+  image: profile.src
 }
 
 export const links = {
-	image: profile.src,
-	title: "@hashirshoaeb",
-	description: "Computer Engineer | Flutter | Reactjs Developer",
-	cards: [
-		{
-			title: "My website",
-			link: "https://hashirshoaeb.com/",
-		},
-		{
-			title: "QuranTalk App",
-			link: "https://www.qurantalk.app/",
-		},
-		{
-			title: "StarBook App",
-			link: "https://starbook.dev/",
-		},
-		{
-			title: "My GitHub",
-			link: "https://github.com/hashirshoaeb/",
-		},
-		{
-			title: "My LinkedIn",
-			link: "https://www.linkedin.com/in/hashirshoaeb/",
-		},
-	]
+  image: profile.src,
+  title: "@nikhilajjarapu",
+  description: "Student at UT Austin",
+  cards: [
+    {
+      title: "My website",
+      link: "https://nikhil-ajjarapu.github.io/"
+    }, {
+      title: "My GitHub",
+      link: "https://github.com/nikhil-ajjarapu/"
+    }, {
+      title: "My LinkedIn",
+      link: "https://www.linkedin.com/in/nikhilajjarapu/"
+    },
+  ]
 }
